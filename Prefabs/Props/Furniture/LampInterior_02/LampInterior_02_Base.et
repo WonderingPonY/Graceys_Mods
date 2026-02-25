@@ -1,0 +1,99 @@
+GenericEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SignalsManagerComponent "{64F24E1686B0F249}" {
+  }
+  SoundComponent "{64F24E1685FE9428}" {
+   Filenames {
+    "{288E6E06D5C624E7}Sounds/Props/Civilian/Props_LightTable_01.acp"
+   }
+  }
+  ParametricMaterialInstanceComponent "{64F24E16BF9177CF}" {
+  }
+  SCR_BaseInteractiveLightComponent "{64F24E16B78DB5C8}" {
+   Enabled 0
+   m_aLightData {
+    SCR_BaseLightData "{64F24E11488CFC94}" {
+     m_eLightType SPOT
+     m_vLightOffset -0.318 1.589 -0.072
+     m_vLightColor 1 0.896 0.687
+     m_vLightConeDirection -30 -45 1
+     m_fConeAngle 90
+     m_fRadius 4
+     m_fIntensityClipEV -10
+     m_eLightFlags 3
+    }
+    SCR_BaseLightData "{64F24E1106332EAE}" {
+     m_eLightType SPOT
+     m_vLightOffset 0.236 1.269 0.191
+     m_vLightColor 1 0.701 0.361
+     m_vLightConeDirection 30 -45 1
+     m_fConeAngle 90
+     m_fRadius 4
+     m_fIntensityClipEV -10
+     m_eLightFlags 3
+    }
+   }
+   m_bGradualLightning 1
+   m_fLV 2
+   m_eInitialLightState LIT_ON_SPAWN
+  }
+  SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+   Enabled 1
+  }
+  SCR_LampComponent "{64F24E16A797E2B4}" {
+   m_aLightData {
+    SCR_BaseLightData "{64F24E11DD2EC2A0}" {
+     m_eLightType SPOT
+     m_vLightOffset -0.318 1.589 -0.072
+     m_vLightColor 1 0.701 0.361
+     m_vLightConeDirection -30 -45 1
+     m_fConeAngle 90
+     m_fRadius 4
+     m_fIntensityClipEV -10
+     m_eFlareType Disabled
+     m_vFlareOffset 0 0 0
+     m_eLightFlags 3
+    }
+    SCR_BaseLightData "{64F24E11D56E644C}" {
+     m_eLightType SPOT
+     m_vLightOffset 0.236 1.269 0.191
+     m_vLightColor 1 0.701 0.361
+     m_vLightConeDirection 30 -45 1
+     m_fConeAngle 90
+     m_fRadius 4
+     m_fIntensityClipEV -10
+     m_eFlareType Disabled
+     m_vFlareOffset 0 0 0
+     m_eLightFlags CASTSHADOW
+    }
+   }
+   m_bGradualLightning 1
+   m_fLV 2
+   m_sParticle ""
+  }
+  ActionsManagerComponent "{64F24E16A079BFF7}" {
+   ActionContexts {
+    UserActionContext "{64F24E11C1B79691}" {
+     ContextName "Switch"
+     Position PointInfo "{64F24E11FBE5439B}" {
+      Offset 0 1.4635 0
+     }
+     Radius 1
+    }
+   }
+   additionalActions {
+    SCR_SwitchLightUserAction "{64F24E119ADC4396}" {
+     ParentContextList {
+      "Switch"
+     }
+     m_sLightDescription "#AR-UserAction_LampLightOn"
+     m_sExtinguishDescription "#AR-UserAction_LampLightOff"
+    }
+   }
+  }
+  RplComponent "{5624A88DC2D9928D}" {
+   Enabled 1
+  }
+ }
+}

@@ -1,0 +1,349 @@
+AudioClass {
+ signals {
+  SignalClass {
+   id 1037
+   name "Signal 15"
+   tl -2058.072 -684.904
+   res "{A45B14CDEA2D5DCD}Sounds/_SharedData/Signals/Props/Props_Occlusion.sig"
+   conns {
+    IOPConnectionClass iopConnection {
+     port 23
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass connection {
+         id 11276
+         port 1
+        }
+       }
+      }
+     }
+    }
+   }
+   inputsport {
+    1 6 7 23 52 56
+   }
+   outputsport {
+    5 37
+   }
+   inputvalues {
+    0 0 0 1 1000 400
+   }
+   inputvaluesmin {
+    0 0 0 0 0 0
+   }
+   inputvaluesmax {
+    1 1 1 1 10000 10000
+   }
+   path "{A45B14CDEA2D5DCD}Sounds/_SharedData/Signals/Props/Props_Occlusion.sig"
+  }
+  SignalClass {
+   id 4109
+   name "Signal Reverb"
+   tl -1560.127 -843.296
+   res "{76CBB40EF7F227B6}Sounds/_SharedData/Signals/Reverb/Reverb_Base.sig"
+   conns {
+    IOPConnectionClass iopConnection {
+     port 35
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass connection {
+         id 11276
+         port 1
+        }
+       }
+      }
+     }
+    }
+   }
+   inputsport {
+    1 35 40 112 139
+   }
+   outputsport {
+    34 39 105 106 107 110
+   }
+   inputvalues {
+    40 1 0 16000 16000
+   }
+   inputvaluesmin {
+    0 0 0 0 0
+   }
+   inputvaluesmax {
+    100 1 1 16000 16000
+   }
+   path "{76CBB40EF7F227B6}Sounds/_SharedData/Signals/Reverb/Reverb_Base.sig"
+  }
+ }
+ sounds {
+  SoundClass {
+   id 6153
+   name "SOUND_WATERFALL_MEDIUM_LP"
+   version 5
+   tl -1822.83 -441.401
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 2060
+       port 1
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 9234
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+  }
+ }
+ mixers {
+  MixerClass {
+   id 8203
+   name "OutputState"
+   version 4
+   tl -1565.605 -440.28
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   ins {
+    ConnectionsClass connections {
+     id 79879
+     links {
+      ConnectionClass connection {
+       id 6153
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 152583
+     links {
+      ConnectionClass connection {
+       id 5149
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    49152 0
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "Dialog_Delay_Exterior"
+   }
+  }
+ }
+ constants {
+  ConstantClass {
+   id 2060
+   name "Constant Trigger"
+   version 5
+   tl -1821.188 -537.083
+   "Constant values" {
+    IOPConstantsValueClass Trigger {
+     Key "Trigger"
+     Value 1
+     Port 1
+    }
+   }
+  }
+  ConstantClass {
+   id 11276
+   name "Constant 0"
+   version 5
+   tl -2270.02 -613.346
+   "Constant values" {
+    IOPConstantsValueClass "0" {
+     Key "0"
+     Port 1
+    }
+   }
+  }
+ }
+ shaders {
+  ShaderClass {
+   id 9234
+   name "Shader"
+   version 5
+   tl -2061.302 -440.568
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 3100
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 12307
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 10261
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 7172
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+   ITD 0
+  }
+ }
+ amplitudes {
+  AmplitudeClass : "{2D5607FF1ED3F5D3}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-35LUFS_to_-30LUFS.conf" {
+   id 12307
+   comment ""
+   version 5
+   tl -2055.734 -831.273
+   parent "{2D5607FF1ED3F5D3}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-35LUFS_to_-30LUFS.conf"
+   outerRange 2
+  }
+ }
+ frequency {
+  FrequencyClass : "{0005FE42A6D80399}Sounds/_SharedData/Configs/Frequency/_SharedData/Frequency_DynamicUpdate.conf" {
+   id 10261
+   version 5
+   tl -2056.302 -758.318
+   parent "{0005FE42A6D80399}Sounds/_SharedData/Configs/Frequency/_SharedData/Frequency_DynamicUpdate.conf"
+   ins {
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 1037
+       port 37
+      }
+     }
+    }
+   }
+   pi {
+    16 0
+   }
+   pu {
+    16 0
+   }
+   enableDirectivity 1
+   directivityFactor 1
+  }
+ }
+ banks_local {
+  BankLocalClass {
+   id 7172
+   name "Waterfall Medium"
+   version 7
+   tl -2286.302 -442.235
+   Volume -36
+   "Loop count" 255
+   "Infinite loop" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{63088943CF308D01}Audio/ES_Old Wall Clocks, Ticks, Mechanical 01.wav"
+    }
+   }
+  }
+ }
+ spatialities {
+  SpatialityClass {
+   id 3100
+   name "Spatiality"
+   version 5
+   tl -2054.575 -905.25
+   SpatialFactorSource AzimuthCurve
+   Curve0 {
+    CurvePoint "1" {
+     X 10
+    }
+    CurvePoint "2" {
+     X 60
+     Y 1
+    }
+   }
+   Curve90 {
+    CurvePoint "1" {
+     X 10
+    }
+    CurvePoint "2" {
+     X 30
+     Y 1
+    }
+   }
+  }
+ }
+ auxOuts {
+  AuxOutClass {
+   id 5149
+   name "AuxOut Reverb INT"
+   version 5
+   tl -1563.911 -561.893
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 6153
+       port 5
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 4109
+       port 34
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 4109
+       port 39
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   pu {
+    6 0
+   }
+   OSPort 152583
+  }
+ }
+ version 1
+}

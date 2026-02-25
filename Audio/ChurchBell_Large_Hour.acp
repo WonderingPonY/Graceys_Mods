@@ -1,0 +1,544 @@
+AudioClass {
+ signals {
+  SignalClass {
+   id 43021
+   name "Signal 15"
+   tl -587.371 -106.626
+   res "{A45B14CDEA2D5DCD}Sounds/_SharedData/Signals/Props/Props_Occlusion.sig"
+   conns {
+    IOPConnectionClass iopConnection {
+     port 23
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass connection {
+         id 48140
+         port 1
+        }
+       }
+      }
+     }
+    }
+   }
+   inputsport {
+    1 23 52 56
+   }
+   outputsport {
+    5 37
+   }
+   inputvalues {
+    0 0 1000 400
+   }
+   inputvaluesmin {
+    0 0 0 0
+   }
+   inputvaluesmax {
+    1 1 10000 10000
+   }
+   path "{A45B14CDEA2D5DCD}Sounds/_SharedData/Signals/Props/Props_Occlusion.sig"
+  }
+  SignalClass {
+   id 46093
+   name "Signal Reverb"
+   tl -95.495 -26.194
+   res "{76CBB40EF7F227B6}Sounds/_SharedData/Signals/Reverb/Reverb_Base.sig"
+   inputsport {
+    1 35 40 112 139
+   }
+   outputsport {
+    34 39 105 107 106 110
+   }
+   inputvalues {
+    40 1 1 16000 16000
+   }
+   inputvaluesmin {
+    0 0 0 0 0
+   }
+   inputvaluesmax {
+    100 1 1 16000 16000
+   }
+   path "{76CBB40EF7F227B6}Sounds/_SharedData/Signals/Reverb/Reverb_Base.sig"
+  }
+ }
+ sounds {
+  SoundClass {
+   id 34825
+   name "SOUND_BELL_END"
+   version 5
+   tl -364.34 445.985
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 33810
+       port 65
+      }
+     }
+    }
+   }
+   bypassVolumeTest 1
+   transformation Offset
+   offsetName "Bell"
+   static 1
+  }
+  SoundClass {
+   id 40969
+   name "SOUND_BELL_A"
+   version 5
+   tl -360.947 134.556
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 37906
+       port 65
+      }
+     }
+    }
+   }
+   bypassVolumeTest 1
+   transformation Offset
+   offsetName "Bell"
+   static 1
+  }
+  SoundClass {
+   id 41993
+   name "SOUND_BELL_B"
+   version 5
+   tl -363.09 288.306
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 39954
+       port 65
+      }
+     }
+    }
+   }
+   bypassVolumeTest 1
+   transformation Offset
+   offsetName "Bell"
+   static 1
+  }
+ }
+ mixers {
+  MixerClass {
+   id 38923
+   name "OutputState"
+   version 4
+   tl -99.47 490.722
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   ins {
+    ConnectionsClass connections {
+     id 79879
+     links {
+      ConnectionClass connection {
+       id 34825
+       port 65
+      }
+      ConnectionClass connection {
+       id 41993
+       port 65
+      }
+      ConnectionClass connection {
+       id 40969
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 152583
+     links {
+      ConnectionClass connection {
+       id 49181
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 197639
+     links {
+      ConnectionClass connection {
+       id 47133
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    8437760 0
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "WPN_TravelingProjectile" "Dialog_Delay_Exterior" "SFX_Reverb_InCabin"
+   }
+  }
+ }
+ constants {
+  ConstantClass {
+   id 48140
+   name "Constant 19"
+   version 5
+   tl -829.855 -33.361
+   "Constant values" {
+    IOPConstantsValueClass "0" {
+     Key "0"
+     Port 1
+    }
+   }
+  }
+ }
+ shaders {
+  ShaderClass {
+   id 33810
+   name "Shader 6"
+   version 5
+   tl -587.371 445.806
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 44060
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 31763
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 36885
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 35844
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   ITD 0
+  }
+  ShaderClass {
+   id 37906
+   name "Shader 4"
+   version 5
+   tl -587.371 134.556
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 44060
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 31763
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 36885
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 45060
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   ITD 0
+  }
+  ShaderClass {
+   id 39954
+   name "Shader 5"
+   version 5
+   tl -587.371 288.556
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 44060
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 31763
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 36885
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 32772
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   ITD 0
+  }
+ }
+ amplitudes {
+  AmplitudeClass : "{BA1F5E72DA797274}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-30LUFS_to_-25LUFS.conf" {
+   id 31763
+   version 5
+   tl -587.371 -181.88
+   parent "{BA1F5E72DA797274}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-30LUFS_to_-25LUFS.conf"
+   outerRange 555
+  }
+ }
+ frequency {
+  FrequencyClass : "{CA912C59A9267045}Sounds/_SharedData/Configs/Frequency/_SharedData/Frequency_Base.conf" {
+   id 36885
+   version 5
+   tl -587.371 37.099
+   parent "{CA912C59A9267045}Sounds/_SharedData/Configs/Frequency/_SharedData/Frequency_Base.conf"
+   ins {
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 43021
+       port 37
+      }
+     }
+    }
+   }
+   pi {
+    16 0
+   }
+   pu {
+    16 0
+   }
+  }
+ }
+ banks_local {
+  BankLocalClass {
+   id 32772
+   name "Bell B"
+   version 7
+   tl -829.855 292.306
+   Volume -8
+   "Termination Fade Out" 100
+   "Fade out function" SCurve
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{C027BA477A65207C}Sounds/Structures/Cultural/Churches/Church_01/Samples/Structures_Chuch_01_Bell_B_1.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{593903DE678211EC}Sounds/Structures/Cultural/Churches/Church_01/Samples/Structures_Chuch_01_Bell_B_2.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2E336B569320FE9C}Sounds/Structures/Cultural/Churches/Church_01/Samples/Structures_Chuch_01_Bell_B_3.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{29F49107F5A6445F}Sounds/Structures/Cultural/Churches/Church_01/Samples/Structures_Chuch_01_Bell_B_4.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 35844
+   name "Bell End"
+   version 7
+   tl -829.855 446.306
+   Volume -8
+   "Termination Fade Out" 100
+   "Fade out function" SCurve
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{FA3C40E2EDFBEC56}Sounds/Structures/Cultural/Churches/Church_01/Samples/Structures_Chuch_01_Bell_End_1.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{6322F97BF01CDDC6}Sounds/Structures/Cultural/Churches/Church_01/Samples/Structures_Chuch_01_Bell_End_2.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 45060
+   name "Bell A"
+   version 7
+   tl -829.855 138.306
+   Volume -8
+   "Termination Fade Out" 100
+   "Fade out function" SCurve
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{CA82EA0ACC75D3FB}Sounds/Structures/Cultural/Churches/Church_01/Samples/Structures_Chuch_01_Bell_A_1.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{539C5393D192E26B}Sounds/Structures/Cultural/Churches/Church_01/Samples/Structures_Chuch_01_Bell_A_2.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{24963B1B25300D1B}Sounds/Structures/Cultural/Churches/Church_01/Samples/Structures_Chuch_01_Bell_A_3.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{2351C14A43B6B7D8}Sounds/Structures/Cultural/Churches/Church_01/Samples/Structures_Chuch_01_Bell_A_4.wav"
+    }
+   }
+  }
+ }
+ spatialities {
+  SpatialityClass {
+   id 44060
+   name "Spatiality"
+   version 5
+   tl -587.371 -257.158
+   spatialFactor 1
+  }
+ }
+ auxOuts {
+  AuxOutClass {
+   id 47133
+   name "AuxOut Reverb EXT"
+   version 5
+   tl -97.254 365.722
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 40969
+       port 5
+      }
+      ConnectionClass connection {
+       id 41993
+       port 5
+      }
+      ConnectionClass connection {
+       id 34825
+       port 5
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 46093
+       port 105
+      }
+     }
+    }
+   }
+   pi {
+    3 0
+   }
+   pu {
+    2 0
+   }
+   OSPort 197639
+  }
+  AuxOutClass {
+   id 49181
+   name "AuxOut Reverb INT"
+   version 5
+   tl -98.384 216.996
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 34825
+       port 5
+      }
+      ConnectionClass connection {
+       id 41993
+       port 5
+      }
+      ConnectionClass connection {
+       id 40969
+       port 5
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 46093
+       port 34
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 46093
+       port 39
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   pu {
+    6 0
+   }
+   OSPort 152583
+  }
+ }
+ version 1
+}

@@ -1,0 +1,14 @@
+GameEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SCR_BaseInteractiveLightComponent "{6196F1A0EA27341D}" {
+   m_aLightData {
+    SCR_BaseLightData "{6196F1A0EA273416}" {
+     m_eLightType SPOT
+     m_vLightColor 1 0.896 0.687
+    }
+   }
+  }
+ }
+ coords 1.498 0.158 -0.125
+}

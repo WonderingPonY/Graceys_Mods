@@ -1,0 +1,45 @@
+GenericEntity : "{533AC2E8A0F5272A}Prefabs/Structures/BuildingParts/BuildingParts_Base.et" {
+ ID "5111E74D4E7A8DB6"
+ components {
+  SignalsManagerComponent "{654A25D6778C967D}" {
+  }
+  SoundComponent "{654A25D66AD268C0}" {
+   Filenames {
+    "{ADF9249D6654328B}Sounds/Compositions/Misc/Campfire/Compositions_Campfire.acp"
+   }
+  }
+  SCR_FireplaceComponent "{654A25D6B6819A1C}" {
+   m_sParticle "{40318DDE45FF4CC3}Particles/Enviroment/Lamp_fire_normal.ptc"
+   m_eInitialLightState LIT_ON_SPAWN
+  }
+  ActionsManagerComponent "{654A25C9B19D8AB5}" {
+   ActionContexts {
+    UserActionContext "{654A25C9AA52CA84}" {
+     ContextName "Light Fire"
+     Position PointInfo "{654A25C9A346C5AF}" {
+      Offset 0.0586 0.4794 0.7979
+     }
+     Radius 1
+    }
+   }
+   additionalActions {
+    SCR_LightFireplaceUserAction "{654A25D6215B97C1}" {
+     ParentContextList {
+      "Light Fire"
+     }
+     VisibilityRange 2
+     Duration 3
+    }
+   }
+  }
+  RplComponent "{58F896B4A67424D9}" {
+   AutoHierarchy 1
+  }
+  RplComponent "{58FC7CAC2034C3E2}" {
+   AutoHierarchy 1
+  }
+  Hierarchy "{612AE78C95E98EEB}" {
+   Enabled 0
+  }
+ }
+}

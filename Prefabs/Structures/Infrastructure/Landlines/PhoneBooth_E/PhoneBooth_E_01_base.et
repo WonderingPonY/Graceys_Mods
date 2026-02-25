@@ -1,0 +1,17 @@
+SCR_DestructibleBuildingEntity : "{A43A100E3C377DB2}Prefabs/Structures/Core/Building_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SCR_PhoneRingerRandoComponent "{64F83C7450325795}" {
+   Filenames {
+    "{B4515F3892752407}Audio/PhoneBoothRing5.acp"
+   }
+   OnFrameUpdate 1
+   repetition 1
+   SoundEventName "PHONE_BOOTH"
+  }
+  RplComponent "{50A4E7C9B5728062}" {
+   "Rpl State Override" Runtime
+   AutoHierarchy 1
+  }
+ }
+}

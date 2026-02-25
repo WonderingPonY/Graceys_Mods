@@ -1,0 +1,15 @@
+GenericEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SoundComponent "{64F60932A230ACE6}" {
+   Filenames {
+    "{9AA4BFC2205E4163}Audio/WallClock_Ticking.acp"
+   }
+   SoundPoints {
+    SoundPointInfo pp {
+     Angles 0 90 0
+    }
+   }
+  }
+ }
+}

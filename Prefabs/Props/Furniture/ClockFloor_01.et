@@ -1,0 +1,18 @@
+GenericEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SoundComponent "{64F4382D9E76C03D}" {
+   Filenames {
+    "{2CEBC17A51C43BC7}Audio/Grandfather_Clock.acp"
+   }
+   SoundPoints {
+    SoundPointInfo pp {
+     Angles 0 90 0
+    }
+   }
+  }
+  RplComponent "{5624A88DC2D9928D}" {
+   Enabled 1
+  }
+ }
+}

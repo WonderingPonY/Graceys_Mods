@@ -1,0 +1,16 @@
+GenericEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SCR_PhoneRingerRandoComponent "{64F609355E2383CB}" {
+   Filenames {
+    "{C4513D87431CD50D}Audio/PhoneTableRinger.acp"
+   }
+   OnFrameUpdate 1
+  }
+  RplComponent "{5624A88DC2D9928D}" {
+   Enabled 1
+   "Rpl State Override" Runtime
+   AutoHierarchy 1
+  }
+ }
+}

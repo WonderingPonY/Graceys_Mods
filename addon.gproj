@@ -1,0 +1,8 @@
+GameProject {
+ ID "GraceysMods"
+ GUID "64F609225178C728"
+ TITLE "Graceys_Mods"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}

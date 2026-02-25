@@ -1,0 +1,75 @@
+GenericEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SignalsManagerComponent "{64F24E159A033A75}" {
+  }
+  SoundComponent "{64F24E1597465225}" {
+   Filenames {
+    "{288E6E06D5C624E7}Sounds/Props/Civilian/Props_LightTable_01.acp"
+   }
+  }
+  ParametricMaterialInstanceComponent "{64F24E158F828207}" {
+  }
+  SCR_BaseInteractiveLightComponent "{64F24E148E233871}" {
+   Enabled 0
+   m_aLightData {
+    SCR_BaseLightData "{64F24E1774C9A3C9}" {
+     m_eLightType POINT
+     m_vLightOffset 0 1.288 0
+     m_vLightColor 1 0.896 0.687
+     m_fRadius 2
+     m_fIntensityClipEV -10
+     m_vFlareOffset 0 1.288 0
+     m_fScale 0.2
+     m_eLightFlags 3
+    }
+   }
+   m_bGradualLightning 1
+   m_fLV 2
+   m_eInitialLightState LIT_ON_SPAWN
+  }
+  SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+   Enabled 1
+  }
+  SCR_LampComponent "{64F24E1586BC7A41}" {
+   m_aLightData {
+    SCR_BaseLightData "{64F24E15BD89614D}" {
+     m_eLightType POINT
+     m_vLightOffset 0 1.288 0
+     m_vLightColor 1 0.701 0.361
+     m_fConeAngle 90
+     m_fRadius 2
+     m_fIntensityClipEV -10
+     m_eFlareType Disabled
+     m_eLightFlags 3
+    }
+   }
+   m_fLV 2
+   m_sParticle ""
+  }
+  ActionsManagerComponent "{64F24E15819317AE}" {
+   ActionContexts {
+    UserActionContext "{64F24E1449B0B0C2}" {
+     ContextName "Switch"
+     Position PointInfo "{64F24E14415BBD5A}" {
+      Offset 0 0.9037 0
+     }
+     Radius 1
+    }
+   }
+   additionalActions {
+    SCR_SwitchLightUserAction "{64F24E1463EAF2D1}" {
+     ParentContextList {
+      "Switch"
+     }
+     m_sLightDescription "#AR-UserAction_LampLightOn"
+     m_sExtinguishDescription "#AR-UserAction_LampLightOff"
+    }
+   }
+  }
+  RplComponent "{5624A88DC2D9928D}" {
+   Enabled 1
+  }
+ }
+ coords 0 0.122 0
+}

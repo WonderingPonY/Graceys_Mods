@@ -1,0 +1,16 @@
+GenericEntity : "{108B2B2A04700231}Prefabs/Props/Furniture/ClockFloor_01.et" {
+ coords -412.867 0 -604.492
+}
+GenericEntity : "{3CF7EAA0F05546FF}Prefabs/Props/Furniture/PhoneTable_01_Base.et" {
+ coords -413.117 0 -593.516
+}
+SCR_DestructibleBuildingEntity : "{FFA5D2DA06D4AE82}PrefabLibrary/Structures/Cultural/ChurchSmall_E_01/ChurchSmall_E_01.et" {
+ components {
+  SCR_BellSoundComponent "{64F60928CD4AC240}" {
+   Filenames {
+    "{4DE79326D46623DD}Sounds/Structures/Cultural/Churches/Church_01/Structures_Church_01.acp"
+   }
+  }
+ }
+ coords -400.198 0 -602.449
+}

@@ -1,0 +1,110 @@
+SCR_DestructibleBuildingEntity : "{A43A100E3C377DB2}Prefabs/Structures/Core/Building_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SCR_BellSoundComponent "{64F60929F93895F1}" {
+   Filenames {
+    "{A7F58E55CD29B82D}Audio/ChurchBell_Large_Hour.acp"
+   }
+   OnFrameUpdate 1
+   SoundPoints {
+    SoundPointInfo Bell {
+     Offset 0 13.252 6.7582
+    }
+   }
+   m_aSoundBellTime {
+    SCR_SoundBellTime "{64F6092F8969030B}" {
+     m_fBellTime 1
+     m_iRepetitionCount 1
+    }
+    SCR_SoundBellTime "{64F6092F8683383B}" {
+     m_fBellTime 2
+     m_iRepetitionCount 2
+    }
+    SCR_SoundBellTime "{64F6092F8639371F}" {
+     m_fBellTime 3
+     m_iRepetitionCount 3
+    }
+    SCR_SoundBellTime "{64F6092FA6ACACB9}" {
+     m_fBellTime 4
+     m_iRepetitionCount 4
+    }
+    SCR_SoundBellTime "{64F6092F96A75891}" {
+     m_fBellTime 5
+     m_iRepetitionCount 5
+    }
+    SCR_SoundBellTime "{64F6092F0CB2B4CC}" {
+     m_fBellTime 6
+     m_iRepetitionCount 6
+    }
+    SCR_SoundBellTime "{64F6092F08C12489}" {
+     m_fBellTime 7
+     m_iRepetitionCount 7
+    }
+    SCR_SoundBellTime "{64F6092F02011588}" {
+     m_fBellTime 8
+     m_iRepetitionCount 8
+    }
+    SCR_SoundBellTime "{64F6092F3DB0FEE4}" {
+     m_fBellTime 9
+     m_iRepetitionCount 9
+    }
+    SCR_SoundBellTime "{64F6092F38004413}" {
+     m_fBellTime 10
+     m_iRepetitionCount 10
+    }
+    SCR_SoundBellTime "{64F6092F34EEE0EF}" {
+     m_fBellTime 11
+     m_iRepetitionCount 11
+    }
+    SCR_SoundBellTime "{64F60929F40F08BF}" {
+     m_fBellTime 12
+     m_iRepetitionCount 12
+    }
+    SCR_SoundBellTime "{64F6092F74C43EA9}" {
+     m_fBellTime 13
+     m_iRepetitionCount 1
+    }
+    SCR_SoundBellTime "{64F6092F2CE1335E}" {
+     m_fBellTime 14
+     m_iRepetitionCount 2
+    }
+    SCR_SoundBellTime "{64F6092F2A294E3D}" {
+     m_fBellTime 15
+     m_iRepetitionCount 3
+    }
+    SCR_SoundBellTime "{64F6092F2A6A69F9}" {
+     m_fBellTime 16
+     m_iRepetitionCount 4
+    }
+    SCR_SoundBellTime "{64F6092F285BE97A}" {
+     m_fBellTime 17
+     m_iRepetitionCount 5
+    }
+    SCR_SoundBellTime "{64F6092F29C12DFB}" {
+     m_fBellTime 18
+     m_iRepetitionCount 6
+    }
+    SCR_SoundBellTime "{64F6092F29724390}" {
+     m_fBellTime 19
+     m_iRepetitionCount 7
+    }
+    SCR_SoundBellTime "{64F6092F26C4500B}" {
+     m_fBellTime 20
+     m_iRepetitionCount 8
+    }
+    SCR_SoundBellTime "{64F6092F262325F7}" {
+     m_fBellTime 21
+     m_iRepetitionCount 9
+    }
+    SCR_SoundBellTime "{64F6092FECB0D88C}" {
+     m_fBellTime 22
+     m_iRepetitionCount 10
+    }
+    SCR_SoundBellTime "{64F6092FEC8B1A61}" {
+     m_fBellTime 23
+     m_iRepetitionCount 11
+    }
+   }
+  }
+ }
+}

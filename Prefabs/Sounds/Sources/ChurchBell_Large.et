@@ -1,0 +1,26 @@
+GenericEntity {
+ ID "64F438BF2791A2BC"
+ components {
+  SCR_BellSoundComponent "{64F43881EFC30E24}" {
+   Filenames {
+    "{A7F58E55CD29B82D}Audio/ChurchBell_Large_Hour.acp"
+   }
+   SoundPoints {
+    SoundPointInfo pp {
+    }
+   }
+   m_aSoundBellTime {
+    SCR_SoundBellTime "{64F43881ED63DDD8}" {
+     m_fBellTime 0
+     m_iRepetitionCount 6
+    }
+   }
+  }
+  SoundComponent "{64F609271B6AAABB}" {
+   Filenames {
+    "{4DE79326D46623DD}Sounds/Structures/Cultural/Churches/Church_01/Structures_Church_01.acp"
+   }
+  }
+ }
+ Flags 1024
+}
